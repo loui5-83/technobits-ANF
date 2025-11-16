@@ -21,6 +21,7 @@ urlpatterns = [
     path('autenticacion/', include('autenticacion.urls')),
     path('', include('sica.urls')),
     path('chaining/', include('smart_selects.urls')),
+    path('admin/', admin.site.urls),
 ]
 
 handler404 = 'autenticacion.views.error_404'
