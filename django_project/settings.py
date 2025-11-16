@@ -97,7 +97,7 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -107,6 +107,14 @@ DATABASES = {
         'HOST': 'localhost', 	
         'PORT': '5432',	
     }
+}
+"""
+DATABASES = {
+    'default': dj_database_url.config(
+        default='postgresql://sica_user:1R4Is2mpgscY9CFjobCLuIGtldXGAS3H@dpg-d4ci7ca4d50c73d75i20-a/sica',
+        conn_max_age=600,
+        ssl_require=True
+    )
 }
 
 
