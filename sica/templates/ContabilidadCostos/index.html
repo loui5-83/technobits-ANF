@@ -1,0 +1,56 @@
+{% extends "bases/base.html" %}
+
+{% block titulo %} Inicio {%endblock %}
+
+{% block contenido %}
+
+<div class="container">
+    <div class="jumbotron" style="background-color: #08728737!important;">
+        <center><h1 class="display-6"> Contabilidad de costos </h1></center>
+        <hr class="my-2">
+        <br>
+
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-5 ">
+                <div class="card text-dark bg-light text-center" style="max-width: 18rem;">
+                    <div class="card-header text-white bg-dark" style="background-color: #087287!important;">
+                        <h5 class="card-title">Orden por Servicio</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Registro de los costos implicados en la realizacion de un servicio solicitado.
+                        </p>
+                        <br>
+                        <p class="lead">
+                            <a class="btn btn-primary btn-lg" href="{% url 'OrdenProduccion' %}" role="button">Empezar</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 ">
+                <div class="card text-dark bg-light text-center" style="max-width: 18rem;">
+                    <div class="card-header  text-white bg-dark" style="background-color: #087287!important;">
+                        <h5 class="card-title">Contabilidad de costos</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Se detallan todos y cada uno de los servicios realizados por TechnoBits
+                        </p>
+                        <br>
+                        <p class="lead">
+                            <a class="btn btn-primary btn-lg" href="{% url 'verOrdenes' %}" role="button">Empezar</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: rgb(255, 255, 255); /* Cambia el color de fondo de toda la página */
+    }
+</style>
+{%endblock %}

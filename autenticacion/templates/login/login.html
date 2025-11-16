@@ -1,0 +1,34 @@
+{% extends "bases/baseLogin.html" %}
+
+{% block titulo %} Login {% endblock %}
+
+{% block contenido %}
+
+{% load crispy_forms_tags %}
+
+<div class="container vh-100 d-flex justify-content-center align-items-center">
+    <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="max-width: 30rem;">
+        <div class="card-header text-white text-center" style="background-color: #3b3b3b;">
+            <h1 class="display-4">TechnoBits</h1>
+            <h5 class="card-title mt-3">Iniciar Sesión</h5>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <style>.asteriskField { display: none; }</style>
+                    {{ formulario|crispy }}
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #78b1eb;
+    }
+</style>
+
+{% endblock %}

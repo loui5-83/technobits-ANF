@@ -1,0 +1,33 @@
+Clústeres de Alta Disponibilidad
+Los clústeres de alta disponibilidad son grupos de computadoras o servidores que trabajan juntos para asegurarse de que las aplicaciones y servicios estén disponibles todo el tiempo. Si una de las máquinas falla, otra puede tomar su lugar inmediatamente, evitando interrupciones en el servicio.
+
+¿Qué son y para qué sirven?
+Un clúster es un conjunto de máquinas conectadas que actúan como si fueran una sola. La alta disponibilidad se refiere a la capacidad del sistema para seguir funcionando incluso cuando hay fallas en algunos de sus componentes. Estos clústeres sirven para:
+
+Mantener servicios críticos en funcionamiento continuo.
+Evitar tiempos de inactividad que puedan afectar a los usuarios o negocios.
+Proporcionar redundancia y tolerancia a fallos en el sistema.
+Tipos de Clústeres
+Clústeres Activo-Pasivo: Un servidor activo maneja las cargas de trabajo mientras que uno o más servidores pasivos esperan en reserva para asumir el control si el activo falla.
+
+Clústeres Activo-Activo: Múltiples servidores activos comparten la carga de trabajo. Si uno falla, los demás distribuyen su carga entre ellos.
+
+Clústeres de Balanceo de Carga: Distribuyen las solicitudes entrantes entre varios servidores para optimizar el rendimiento y evitar sobrecargas.
+
+¿Quiénes los usan y para qué casos?
+Empresas con servicios en línea: Tiendas en línea, plataformas de streaming y aplicaciones web que requieren disponibilidad constante.
+Instituciones financieras: Bancos y bolsas de valores donde las interrupciones pueden ser costosas.
+Proveedores de servicios en la nube: Para ofrecer infraestructura fiable a sus clientes.
+Organizaciones de salud: Sistemas médicos que necesitan acceso continuo a datos y servicios.
+¿Qué evitan?
+Tiempo de inactividad no planificado: Aseguran que los servicios permanezcan disponibles incluso durante fallas.
+Pérdida de datos: Mediante la replicación y sincronización constante entre servidores.
+Fallas en el servicio al cliente: Mantienen la satisfacción del usuario al evitar interrupciones.
+Fallas Físicas y Cómo las Abordan
+Las fallas físicas incluyen problemas como:
+
+Cortes eléctricos: Los clústeres suelen estar conectados a fuentes de energía redundantes y sistemas de alimentación ininterrumpida (SAI).
+Daños en el hardware: La redundancia de componentes permite reemplazar piezas sin detener el sistema.
+Desastres naturales: La ubicación geográfica distribuida de los servidores puede proteger contra eventos locales.
+En Resumen
+Los clústeres de alta disponibilidad son esenciales para operaciones que no pueden permitirse tiempos de inactividad. Al implementar estos sistemas, las organizaciones aseguran la continuidad de sus servicios, protegen sus datos y mantienen la confianza de sus usuarios mediante soluciones que compensan automáticamente cualquier falla que ocurra.

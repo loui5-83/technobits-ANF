@@ -1,0 +1,2 @@
+INSERT INTO public."TipoTransaccion"("nombre_tipoTransaccion") VALUES ('debe');
+INSERT INTO public."TipoTransaccion"("nombre_tipoTransaccion") VALUES ('haber');

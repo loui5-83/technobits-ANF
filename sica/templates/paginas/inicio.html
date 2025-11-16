@@ -1,0 +1,91 @@
+{% extends "bases/base.html" %}
+
+{% block titulo %} Inicio {%endblock %}
+
+{% block contenido %}
+
+
+<div class="text-center">
+    <h1 class="display-4">Sistema Contable - {{user.username}}</h1>
+    <hr class="my-2">
+    <br>
+
+    <div class="row align-items-center justify-content-center">
+        <div class="col-sm">
+            <div class="card text-dark bg-light text-center" style="max-width: 18rem;">
+                <div class="card-header text-white bg-dark" style="background-color: #d38a46!important;">
+                    <h5 class="card-title">Catálogo de cuentas</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Listado de las cuentas contables y sus categorias
+                    </p>
+                    <br>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="{% url 'catalogo' %}" style="background-color: #d38a46!important;" role="button">Entrar</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm">
+            <div class="card text-dark bg-light  text-center" style="max-width: 18rem;">
+                <div class="card-header text-white bg-dark" style="background-color: #d38a46!important;">
+                    <h5 class="card-title">Libros contables</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Acceso al libro diario y al libro mayor
+                    </p>
+                    <br>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="{% url 'libros' %}" style="background-color: #d38a46!important;" role="button">Entrar</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm">
+            <div class="card text-dark bg-light text-center" style="max-width: 18rem;">
+                <div class="card-header text-white bg-dark" style="background-color: #d38a46!important;">
+                    <h5 class="card-title">Estados financieros</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Acceso a los principales estados financieros
+                    </p>
+                    <br>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="hojaTrabajo" role="button" style="background-color: #d38a46!important;">Entrar</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm">
+            <div class="card text-dark bg-light text-center" style="max-width: 18rem;">
+                <div class="card-header text-white bg-dark" style="background-color: #d38a46!important;">
+                    <h5 class="card-title">Contabilidad de costos</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Control e informacion de los costos
+                    </p>
+                    <br>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="ContabilidadCostos" style="background-color: #d38a46!important;" role="button">Entrar</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<style>
+    body {
+        background-color: rgb(255, 255, 255); /* Cambia el color de fondo de toda la página */
+    }
+</style>
+
+{%endblock %}
