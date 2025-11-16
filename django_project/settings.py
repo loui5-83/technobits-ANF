@@ -111,11 +111,12 @@ DATABASES = {
 """
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgresql://sica_user:1R4Is2mpgscY9CFjobCLuIGtldXGAS3H@dpg-d4ci7ca4d50c73d75i20-a/sica',
+        default='postgresql://sica_user:1R4Is2mpgscY9CFjobCLuIGtldXGAS3H@dpg-d4ci7ca4d50c73d75i20-a.oregon-postgres.render.com:5432/sica',
         conn_max_age=600,
         ssl_require=True
     )
 }
+
 
 
 # Password validation
